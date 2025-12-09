@@ -11,8 +11,7 @@
         <link rel="stylesheet" href="css/qgis2web.css">
         <link rel="stylesheet" href="css/fontawesome-all.min.css">
         <link rel="stylesheet" href="css/leaflet.photon.css">
-		<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
-		<script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+		
 
         <style>
         html, body, #map {
@@ -150,12 +149,7 @@
         layer_OSMStandard_0;
         map.addLayer(layer_OSMStandard_0);
 
-		L.Routing.control({
-    waypoints: [
-        L.latLng(28.264, 83.973),
-        L.latLng(28.210, 83.990)
-    ]
-}).addTo(map);
+	
         function pop_Nepal_1(feature, layer) {
             layer.on({
                 mouseout: function(e) {
